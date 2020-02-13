@@ -1,0 +1,133 @@
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.hat {
+    height: 89px;
+    background-color: #2d303a;
+    position: relative;
+}
+
+.header-name {
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    padding-top: 42px;
+    padding-left: 38px;
+}
+
+.header-star {
+    color:#e26861;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 594px;
+    bottom: 37px;
+    width: 400px;
+}
+
+nav a {
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f06c64; 
+}
+
+.header-line {
+    height: 6px;
+    background-color: #323746;
+}
+
+/*SLIDER*/
+
+.slider {
+    height: 595px;
+    background-color: #f06c64;
+}
+
+/*VERTICAL IPHONE*/
+
+.vertical {
+    position: absolute;
+}
+
+.vertical-shadow {
+    position: relative;
+    left: 112px;
+    top: 53px;
+}
+
+.vertical-base {
+    position: relative;
+    right: 133px;
+    top: 30px;
+}
+
+.vertical-cam {
+    position: relative;
+    bottom: 403px;
+    right: 253px;
+}
+
+.vertical-red {
+    position: relative;
+    bottom: 406px;
+    right: 266px;
+}
+
+.vertical-circle {
+    position: relative;
+    top: 21px;
+    right: 296px;
+}
+
+.vertical-square {
+    position: relative;
+    top: 8px;
+    right: 332px;
+}
+
+.vertical-speaker {
+    position: relative;
+    bottom: 388px;
+    right: 364px;
+}
+
+.vertical-screen-wrap {
+    position: relative;
+    left: 123px;
+    bottom: 371px;
+    width: 188px;
+    height: 333px;
+    z-index: 2;
+    overflow: hidden;
+    border: 3px solid #c6c6c6;
+}
+
+.vertical-screen {
+    position: absolute;
+	top: -135px;
+	left: -14px;
+}
+
+
+
+.slider-line {
+    height: 6px;
+    background-color: #ea676b;
+}
