@@ -48,6 +48,30 @@ nav a:hover {
     color: #f06c64; 
 }
 
+.dot1, .dot2, .dot3, .dot4 {
+    position: absolute;
+    color: #696f8a;
+    font-size: 27px;
+    top: -17px;
+}
+
+.dot1 {
+    left: 63px;
+}
+
+.dot2 {
+    left: 146px;
+}
+
+.dot3 {
+    left: 241px;
+}
+
+.dot4 {
+    left: 313px;
+}
+
+
 .header-line {
     height: 6px;
     background-color: #323746;
@@ -60,11 +84,8 @@ nav a:hover {
     background-color: #f06c64;
 }
 
-/*VERTICAL IPHONE*/
 
-.vertical {
-    position: absolute;
-}
+/*VERTICAL IPHONE*/
 
 .vertical-shadow {
     position: relative;
@@ -120,7 +141,7 @@ nav a:hover {
 }
 
 .vertical-screen {
-    position: absolute;
+    position: relative;
 	top: -135px;
 	left: -14px;
 }
@@ -128,6 +149,12 @@ nav a:hover {
 
 
 .slider-line {
+    margin-top: -230px;
     height: 6px;
     background-color: #ea676b;
+}
+
+.services {
+    height: 400px;
+   
 }
