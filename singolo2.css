@@ -114,6 +114,7 @@ body {
 
 .portfolio-images div:hover {
     transform: scale(0.95);
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -175,3 +176,28 @@ body {
 .persons-info:nth-child(3) .persons-info-text-description {
     letter-spacing: 0.13px;
 }
+
+.persons-info-contacts {
+    display: flex;
+    padding-top: 23px;
+}
+
+.persons-info-contacts a {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    margin-right: 8px;
+    padding: 7px;
+}
+
+.persons-info-contacts img {
+    padding: 0.5px 0 0 1px;
+}
+
+.persons-info-contacts a:hover {
+    border: 2px solid #c48862;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
