@@ -176,10 +176,48 @@ input::-moz-placeholder {
     font-weight: 400;
 }
 
-
-
-
 footer {
     height: 76px;
     background-color: #2d303a;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #666d89;
+    font-family: "Lato";
+    text-decoration: none;
+    font-weight: 300;
+    padding-top: 31px;
+    padding-left: 1px;
+    letter-spacing: 0.45px;
+}
+
+.footer__contacts {
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
+.footer__contacts a {
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+}
+
+.footer__contacts a:hover {
+    border: 2px solid #d6564f;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer__contacts img {
+    padding: 0.5px 0 0 1px;
 }
