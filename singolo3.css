@@ -142,35 +142,39 @@ input::-moz-placeholder {
     font-weight: 400;
 }
 
+.contact-information__links {
+    display: grid;
+    padding-top: 22px;
+    padding-left: 1px;
+}
 
+.links__location {
+    padding-left: 3px;
+}
 
+.links__location:before {
+    content: url(./assets/images/location.svg);
+    padding-right: 13px;
+}
 
+.links__tel:before {
+    content: url(./assets/images/telephone.svg);
+    padding-right: 12px;
+}
 
+.links__mail:before {
+    content: url(./assets/images/mail.svg);
+    padding-right: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact-information__links a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    text-decoration: none;
+    font-weight: 400;
+}
 
 
 
