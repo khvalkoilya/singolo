@@ -76,14 +76,70 @@
     letter-spacing: 0.151px;
 }
 
-.input-menu {
-    width: 619px;
-    float: left;
+.get_a_quote {
+    display: grid;
+    grid-template-columns: 619px 301px;
+    gap: 20px;
+    padding-top: 44px;
 }
 
-.contact-information {
-    width: 301px;
-    float: right;
+input {
+    padding-left: 15px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: 0px;
+    width: 604px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    outline: none;
+}
+
+input:nth-child(4) {
+    padding-bottom: 165px;
+}
+
+input:last-child {
+    width: 120px;
+    padding-right: 10px;
+    font-size: 14px;
+    margin-left: 499px;
+}
+
+input:last-child:hover {
+    background-color: #2d303a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder { 
+    color: #f48c8f;
+}
+
+input::-moz-placeholder {
+    color: #f48c8f;
+}
+
+.contact-information__title {
+    font-size: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900; 
+    letter-spacing: -0.08px;
+}
+
+.contact-information__text {
+    padding-top: 7px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    text-align: justify;
+    letter-spacing: -0.01px;
+    font-weight: 400;
 }
 
 
