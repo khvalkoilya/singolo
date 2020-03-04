@@ -55,7 +55,7 @@ header {
     letter-spacing: -1.2px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Aria sans-serif;
     font-weight: 700;
     padding-top: 41px;
 }
@@ -78,7 +78,7 @@ nav a {
     letter-spacing: -1px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
@@ -305,7 +305,7 @@ nav a:hover {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900;
     padding-top: 70px;
     letter-spacing: -0.2px;
@@ -317,7 +317,7 @@ nav a:hover {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 300;
 }
 /*GRID*/
@@ -325,78 +325,34 @@ nav a:hover {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 122px;
+    grid-auto-rows: 123px;
     padding-top: 46px;
     grid-column-gap: 18px;
 }
 
 .block {
     display: flex;
-
 }
+
+.block:nth-child(3), .block:nth-child(6){
+    padding-left: 1px;
+}
+
 
 .block img {
-    padding-left: 14px;
-    padding-bottom: 55px;
-}
-
-.phone-icon {
-    margin-left: 4px;
-}
-
-.bulb-icon {
-    margin-left: 4px;
-}
-
-.heart-icon {
-    margin-left: -1px;
-}
-
-.ellipse1 {
-    position: absolute;
-    top: 914px;
-    left: 275px;
-}
-
-.ellipse2 {
-    position: absolute;
-    top: 914px;
-    left: 595px;
-}
-
-.ellipse3 {
-    position: absolute;
-    top: 914px;
-    left: 915px;
-}
-
-.ellipse4 {
-    position: absolute;
-    top: 1037px;
-    left: 275px;
-}
-
-.ellipse5 {
-    position: absolute;
-    top: 1037px;
-    left: 594px;
-}
-
-.ellipse6 {
-    position: absolute;
-    top: 1037px;
-    left: 915px;
+    width: 60px;
+    padding-bottom: 58px;    
 }
 
 .block-text {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .block-name1, .block-name2, .block-name3, .block-name4, .block-name5, .block-name6 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900;
 }
 
@@ -406,53 +362,8 @@ nav a:hover {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 400;
-}
-
-.block-description1 {
-    padding-left: 2px;
-}
-
-.block-name2 {
-    padding-left: 5px;
-}
-
-.block-description2 {
-    padding-left: 6px;
-}
-
-.block-name3 {
-    padding-left: 2px;
-}
-
-.block-description3 {
-    padding-left: 2px;
-}
-
-.block-name4 {
-    padding: 1px 0 0 5px;
-}
-
-.block-description4 {
-    padding-left: 6px;
-}
-
-.block-name5 {
-    padding-top: 2px;
-}
-
-.block-description5 {
-    padding-left: 1px;
-    padding-top: 9px;
-}
-
-.block-name6 {
-    padding: 1px 0 0 2px;
-}
-
-.block-description6 {
-    padding-left: 2px;
 }
 
 /*PART 2*/
@@ -468,7 +379,7 @@ nav a:hover {
     letter-spacing: -0.15px;
     font-size: 30px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900;
     padding-top: 63px;
 }
@@ -481,7 +392,7 @@ nav a:hover {
     text-align: justify;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 300;
     padding-top: 21px;
 }
@@ -500,7 +411,7 @@ nav a:hover {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
@@ -560,7 +471,7 @@ nav a:hover {
     letter-spacing: -0.25px;
     font-size: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900;
 }
 
@@ -570,7 +481,7 @@ nav a:hover {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 400;
 }
 
@@ -622,7 +533,7 @@ nav a:hover {
 .quote-menu__title {
     font-size: 30px;
     color: #f0d8d9;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900;
     padding-top: 63px;
     letter-spacing: -0.25px;
@@ -633,7 +544,7 @@ nav a:hover {
     text-align: justify;
     line-height: 30px;
     color: #f0d8d9;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 300;
     padding-top: 21px;
 }
@@ -655,7 +566,7 @@ input {
     margin-bottom: 16px;
     font-size: 12px;
     color: #f48c8f;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 400;
     outline: none;
 }
@@ -688,7 +599,7 @@ input::-moz-placeholder {
 .contact-information__title {
     font-size: 19px;
     color: #f0d8d9;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     font-weight: 900; 
     letter-spacing: -0.6px;
 }
@@ -698,7 +609,7 @@ input::-moz-placeholder {
     font-size: 11.8px;
     line-height: 22px;
     color: #f0d8d9;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     text-align: justify;
     font-weight: 400;
 }
@@ -732,7 +643,7 @@ input::-moz-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     text-decoration: none;
     font-weight: 400;
 }
@@ -750,7 +661,7 @@ footer {
 .copyright {
     font-size: 11px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato", Aria, sans-serif;
     text-decoration: none;
     font-weight: 300;
     padding-top: 31px;
