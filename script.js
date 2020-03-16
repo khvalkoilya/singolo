@@ -1,3 +1,5 @@
+// HEADER NAVIGATION WHICH CHANGE COLOR WITH SCROLL
+
 const scrollNav = (event) => {
     let y=scrollY;
     if(y>=0&&y<600) {
@@ -22,6 +24,8 @@ const scrollNav = (event) => {
     }
 };
 
+// MAKE ELEMENT OF HEADER NAVIGATION RED
+
 const headerNav = (event) => {
     document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
     if(event.target!=event.currentTarget) {
@@ -29,12 +33,75 @@ const headerNav = (event) => {
     }
 };
 
-const sliderFunc = (event) => {
+
+
+
+//BIG PART WITH SLIDER
+
+let items = document.querySelectorAll('.iphones');
+let currentItem=0;
+let isEnabled = true;
+
+function changeBG() {
     if(document.querySelector('.slider').classList.contains('slider2-bg')){
         document.querySelector('.slider').classList.remove('slider2-bg');
     }
     else document.querySelector('.slider').classList.add('slider2-bg');
 }
+
+document.querySelector('.arrow.left').addEventListener('click', function(){
+    changeBG();
+    if(isEnabled) {
+        previousItem(currentItem);
+    }
+});
+
+document.querySelector('.arrow.right').addEventListener('click', function(){
+    changeBG();
+    if(isEnabled) {
+        nextItem(currentItem);
+    }
+});
+
+function changeCurrentItem (number) {
+    currentItem = (number + items.length) % items.length;
+}
+
+function previousItem(number) {
+    hideItem('to-right');
+    changeCurrentItem(number-1);
+    showItem('from-left');
+}
+
+function nextItem(number) {
+    hideItem('to-left');
+    changeCurrentItem(number+1);
+    showItem('from-right');
+}
+
+function hideItem (direction) {
+    isEnabled=false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function () {
+        this.classList.remove('active', direction);
+    });
+}
+
+function showItem (direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function () {
+        this.classList.remove('next', direction);
+        this.classList.add('active');
+        isEnabled=true;
+    });
+}
+
+// END OF SLIDER
+
+
+
+
+// MAKE PORTFOLIO NAVIGATION AND CHANGE PLACES FOR PHOTOS
 
 const portfolioNav = (event) => {
     document.querySelectorAll('.portfolio-nav > p').forEach(p=> { p.classList.remove('p-white') });
@@ -51,6 +118,8 @@ const portfolioNav = (event) => {
     }
 };
 
+// MAKE BORDERS FOR PHOTOS
+
 const portfolioBorder = (event) => {
     if (event.target.parentElement.classList.contains("portfolio-border"))
         event.target.parentElement.classList.remove('portfolio-border');
@@ -61,6 +130,8 @@ const portfolioBorder = (event) => {
         }
     }
 };
+
+// MAKE HALF-OPACITY BACKGROUND AND FORM WITH SUBJECT AND DESCRIPTION
 
 const messageForm = (event) => {
     let inputs=document.querySelectorAll('input');
@@ -87,8 +158,7 @@ const messageForm = (event) => {
 
 window.addEventListener('scroll', scrollNav);
 document.querySelector('.header__nav').addEventListener('click', headerNav);
-document.querySelector('.arrow.right').addEventListener('click', sliderFunc);
-document.querySelector('.arrow.left').addEventListener('click', sliderFunc);
+
 document.querySelector('.portfolio-nav').addEventListener('click', portfolioNav);
 document.querySelector('.portfolio-images').addEventListener('click', portfolioBorder);
 document.querySelector('button').addEventListener('click', messageForm);

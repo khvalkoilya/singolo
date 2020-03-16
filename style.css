@@ -118,15 +118,28 @@ nav a {
     transition: all 1s ease;
 }
 
+.iphones-container {
+    position: relative;
+    overflow: hidden;  
+
+}
 
 .iphones {
+    position: relative;
     padding-left: 69px;
     height: 600px;
     display: none;
+    animation: 1s ease;
 }
 
-.active {
+.active, .next {
     display: block;
+    width: 100%;
+}
+
+.next {
+    position: absolute;
+    top: 0;
 }
 
 .slider .container {
@@ -211,7 +224,7 @@ nav a {
         left: 0;
     }
     to {
-        left: 100%;
+        left: -100%;
     }
 }
 
