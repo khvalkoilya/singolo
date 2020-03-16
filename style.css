@@ -109,13 +109,13 @@ nav a {
     background-color: #f06c64;
     box-sizing: border-box;
     border-bottom: 6px solid #ea676b;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .slider2-bg {
     background-color:rgb(100,139,240);
     border-bottom: 6px solid rgb(94,134,247);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .iphones-container {
@@ -129,7 +129,7 @@ nav a {
     padding-left: 69px;
     height: 600px;
     display: none;
-    animation: 1s ease;
+    animation: 0.5s ease-in-out;
 }
 
 .active, .next {
@@ -144,16 +144,6 @@ nav a {
 
 .slider .container {
     position: relative;
-}
-
-@keyframes rotate {
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-  
-    to {
-      -webkit-transform: rotate(360deg);
-    }
 }
 
 .swiper {
@@ -176,11 +166,12 @@ nav a {
 
 .arrow:hover {
     opacity: 0.5;
-    animation-name: rotate;
-    animation-duration: 1s;
+    transform: scale(1.2);
 } 
 
-
+.horizontal, .vertical {
+    position: relative;
+}
 .vertical-iphone {
     padding: 53px 0 0 3px;
     height: 483px;
@@ -188,10 +179,48 @@ nav a {
     float: left;
 }
 
+.vertical-home {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    top: 460px;
+    left: 90px;
+    position: absolute;
+}
+
+.vertical-blackRect {
+    background-color: #000000;
+    position: absolute;
+    width: 186px;
+    height: 333px;
+    left: 17px;
+    top: 119px;
+    border-radius: 3px;
+}
+
 .horizontal-iphone {
     padding: 174px 0 0 72px;
     height: 240px;
     width: 483px;
+}
+
+.horizontal-home {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    top: 261px;
+    left: 325px;
+    position: absolute;
+}
+
+.horizontal-blackRect {
+    background-color: #000000;
+    position: absolute;
+    width: 333px;
+    height: 185px;
+    left: 376px;
+    top: 190px;
+    border-radius: 3px;
 }
 
 .vertical-iphone-slide2-small {
@@ -203,18 +232,18 @@ nav a {
 }
 
 .vertical-iphone-slide2-small.phone1 {
-    left: 220px;
+    left: 147px;
 }
 
 .vertical-iphone-slide2-small.phone2 {
-    left: 572px;
+    left: 501px;
 }
 
 .vertical-iphone-slide2-big {
     width: 255px;
     height: 513px;
     position: absolute;
-    left: 343px;
+    left: 273px;
     top: 43px;
     z-index: 1;
 }
@@ -588,7 +617,8 @@ input:nth-child(4) {
     font-size: 18px;
     outline: none;
 }
-.message-window {
+
+.message-window, .display-of-iphones {
     display: none;
 }
 

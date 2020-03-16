@@ -98,8 +98,19 @@ function showItem (direction) {
 
 // END OF SLIDER
 
+// MAKE SCREEN ON/OFF 
 
+const verticalScreen = () => {
+    if(document.querySelector('.vertical-blackRect').classList.length==2)
+        document.querySelector('.vertical-blackRect').classList.remove('display-of-iphones');
+    else document.querySelector('.vertical-blackRect').classList.add('display-of-iphones');
+}
 
+const horizontalScreen = () => {
+    if(document.querySelector('.horizontal-blackRect').classList.length==2)
+        document.querySelector('.horizontal-blackRect').classList.remove('display-of-iphones');
+    else document.querySelector('.horizontal-blackRect').classList.add('display-of-iphones');
+}
 
 // MAKE PORTFOLIO NAVIGATION AND CHANGE PLACES FOR PHOTOS
 
@@ -158,7 +169,8 @@ const messageForm = (event) => {
 
 window.addEventListener('scroll', scrollNav);
 document.querySelector('.header__nav').addEventListener('click', headerNav);
-
+document.querySelector('.vertical-home').addEventListener('click', verticalScreen);
+document.querySelector('.horizontal-home').addEventListener('click', horizontalScreen);
 document.querySelector('.portfolio-nav').addEventListener('click', portfolioNav);
 document.querySelector('.portfolio-images').addEventListener('click', portfolioBorder);
 document.querySelector('button').addEventListener('click', messageForm);
