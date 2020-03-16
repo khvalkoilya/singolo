@@ -66,6 +66,21 @@ const messageForm = (event) => {
     let inputs=document.querySelectorAll('input');
     if(inputs[0].validity.valid && inputs[1].validity.valid) {
         document.querySelector('.message').classList.add('fixed-back');
+        document.querySelector('.message-window').classList.add('window-text');
+        document.querySelector('.message-window__text').innerHTML="<p>The letter was sent</p>";
+        if(inputs[2].value.length==0) 
+            document.querySelector('.message-window__text').innerHTML+="<p>Without subject</p>";
+        else document.querySelector('.message-window__text').innerHTML+="<p>Subject : "+inputs[2].value+"</p>";
+
+        if(inputs[3].value.length==0) 
+            document.querySelector('.message-window__text').innerHTML+="<p>Without description</p>";
+        else document.querySelector('.message-window__text').innerHTML+="<p>Description : "+inputs[3].value+"</p>";
+        document.querySelector('.window-button').addEventListener('click', function() {
+            document.querySelector('.message').classList.remove('fixed-back');
+            document.querySelector('.message-window').classList.remove('window-text');
+            document.querySelector('.message-window__text').innerHTML="";
+            inputs.forEach(item=>item.value="");
+        });
         event.preventDefault();
     }
 };
