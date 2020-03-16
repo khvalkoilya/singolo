@@ -11,19 +11,19 @@
         <div class="container">
             <h1 class="header-name">SINGOLO<span class="header-star">*</span></h1>
             <nav class="header__nav">
-                <a href="#">HOME</a>
-                <a href="#">SERVICES</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="#home" class='a-red'>HOME</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </nav>
         </div>
     </header>
     <main>
+        <a name="home"></a>
         <div class="slider">
             <div class="container">
-                <img class="left-swiper" src="assets/images/chev.svg" alt=''>
-                <div class="iphones">
+                <div class="iphones slide1">
                     <div class="vertical">
                         <img class="vertical-iphone" src="./assets/images/phone-vertical-shadow1111111111.svg" alt="iphone">
                     </div>
@@ -31,13 +31,26 @@
                         <img class="horizontal-iphone" src="./assets/images/phone-horizontal-shadow111111111111111111.svg" alt="iphone">
                     </div>
                 </div>
-                <img class="right-swiper" src="assets/images/chev (1).svg" alt=''>
+                <div class="iphones slide2 active">
+                    <div class="vertical">
+                        <img class="vertical-iphone-slide2-small phone1" src="./assets/images/phone-vertical-shadow1111111111.svg" alt="iphone">
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-iphone-slide2-big" src="./assets/images/phone-vertical-withgreen-shadow1111111111.svg" alt="iphone">
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-iphone-slide2-small phone2" src="./assets/images/phone-vertical-shadow1111111111.svg" alt="iphone">
+                    </div>
+                </div>
+                <div class="swiper left"><img class="arrow left" src="assets/images/chev.svg" alt=''></div>
+                <div class="swiper right"><img class="arrow right" src="assets/images/chev (1).svg" alt=''></div>
             </div>
         </div>
         
         <div class="services">
             <div class="container">
-                <div class = "text">
+                <a name="services"></a>
+                 <div class = "text">
                     <p class="services-header">Our Services</p>
                     <p class="services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
                         ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -90,34 +103,36 @@
         </div>
         <section class="portfolio">
             <div class="container">
+                <a name="portfolio"></a>
                 <p class="title-portfolio">Portfolio</p>
                 <p class="text-portfolio">
                     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                 </p>
                 <div class="portfolio-nav">
-                    <a href="#">All</a>
-                    <a href="#">Web Design </a>
-                    <a href="#">Graphic Design</a>
-                    <a href="#">Artwork</a>
+                    <p class="portfolio-link">All</p>
+                    <p class="portfolio-link">Web Design </p>
+                    <p class="portfolio-link">Graphic Design</p>
+                    <p class="portfolio-link">Artwork</p>
                 </div>
                 <div class="portfolio-images">
-                    <div><img src="./assets/images/1 work.svg" alt="1 work"></div>
-                    <div><img src="./assets/images/2 work.svg" alt="2 work"></div>
-                    <div><img src="./assets/images/3 work.svg" alt="3 work"></div>
-                    <div><img src="./assets/images/4 work.svg" alt="4 work"></div>
-                    <div><img src="./assets/images/5 work.svg" alt="5 work"></div>
-                    <div><img src="./assets/images/6 work.svg" alt="6 work"></div>
-                    <div><img src="./assets/images/7 work.svg" alt="7 work"></div>
-                    <div><img src="./assets/images/8 work.svg" alt="8 work"></div>
-                    <div><img src="./assets/images/9 work.svg" alt="9 work"></div>
-                    <div><img src="./assets/images/10 work.svg" alt="10 work"></div>
-                    <div><img src="./assets/images/11 work.svg" alt="11 work"></div>
-                    <div><img src="./assets/images/12 work.svg" alt="12 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/1 work.svg" alt="1 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/2 work.svg" alt="2 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/3 work.svg" alt="3 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/4 work.svg" alt="4 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/5 work.svg" alt="5 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/6 work.svg" alt="6 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/7 work.svg" alt="7 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/8 work.svg" alt="8 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/9 work.svg" alt="9 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/10 work.svg" alt="10 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/11 work.svg" alt="11 work"></div>
+                    <div class="portfolio-images__image"><img src="./assets/images/12 work.svg" alt="12 work"></div>
                 </div>
             </div>
         </section>
         <section class="about_us">
             <div class="container">
+                <a name="about"></a>
                 <p class="title-about_us">About Us</p>
                 <p class="text-about_us">
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
@@ -196,18 +211,19 @@
         </section>
         <section class="quote-menu">
             <div class="container">
+            <a name="contact"></a>
                 <p class="quote-menu__title">Get a Quote</p>
                 <p class="quote-menu__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
                 </p>
                 <div class="get_a_quote">
                     <div class="input-menu">
-                        <form action="#" method="get">
+                        <form action="" method="get">
                             <input type="text" name="name" placeholder="Name (Required)" required>
                             <input type="email" name="email" placeholder="Email (Required)" required>
                             <input type="text" name="subject" placeholder="Subject">
                             <input type="text" name="name" placeholder="Describe your project in detail...">
-                            <input type="submit" name="submit" value="Submit">
+                            <button type="submit">Submit</button>
                         </form>
                     </div>
                     <div class="contact-information">
@@ -225,6 +241,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="message">1</div>
             </div>
         </section>
     </main>
@@ -249,4 +266,5 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
