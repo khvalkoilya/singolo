@@ -120,11 +120,23 @@ const portfolioNav = (event) => {
         event.target.classList.add('p-white');
         let array=[];
         for(let i=0;i<12;i++) {
-            array.push(Math.floor(Math.random()*100));
+            array.push(i);
         }
+        array=shuffle(array);
+        function shuffle(arr){
+            let j, temp;
+            for(var i = arr.length - 1; i > 0; i--){
+                j = Math.floor(Math.random()*(i + 1));
+                temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+            }
+            return arr;
+        }
+        console.log(array);
         let images=Array.from(document.querySelector('.portfolio-images').children);
-        for(let item of images) {
-            item.style.order=array.shift();
+        for(let item=0; item<images.length; item++) {
+            images[item].style.order=array[item];
         }
     }
 };
