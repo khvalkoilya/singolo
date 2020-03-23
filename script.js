@@ -2,25 +2,50 @@
 
 const scrollNav = (event) => {
     let y=scrollY;
-    if(y>=0&&y<600) {
-        document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
-        document.querySelectorAll('.header__nav > a')[0].classList.add('a-red');
+    if(window.innerWidth>1020) {
+        if(y>=0&&y<600) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[0].classList.add('a-red');
+        }
+        if(y>=600&&y<1100) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[1].classList.add('a-red');
+        }
+        if(y>1102&&y<1966) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[2].classList.add('a-red');
+        }
+        if(y>1968&&y<2700) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[3].classList.add('a-red');
+        }
+        if(y>2700) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[4].classList.add('a-red');
+        }
     }
-    if(y>=600&&y<1100) {
-        document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
-        document.querySelectorAll('.header__nav > a')[1].classList.add('a-red');
-    }
-    if(y>1102&&y<1966) {
-        document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
-        document.querySelectorAll('.header__nav > a')[2].classList.add('a-red');
-    }
-    if(y>1968&&y<2700) {
-        document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
-        document.querySelectorAll('.header__nav > a')[3].classList.add('a-red');
-    }
-    if(y>2700) {
-        document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
-        document.querySelectorAll('.header__nav > a')[4].classList.add('a-red');
+    else {
+        console.log(y);
+        if(y>=0&&y<452) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[0].classList.add('a-red');
+        }
+        if(y>=452&&y<1192) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[1].classList.add('a-red');
+        }
+        if(y>1192&&y<2293) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[2].classList.add('a-red');
+        }
+        if(y>2293&&y<3000) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[3].classList.add('a-red');
+        }
+        if(y>3000) {
+            document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
+            document.querySelectorAll('.header__nav > a')[4].classList.add('a-red');
+        }
     }
 };
 
