@@ -44,8 +44,7 @@ body {
   }
 
 .container {
-    max-width: 1020px;
-    width: 100%;
+    width: 1020px;
     margin: 0 auto; 
     padding: 0 40px;
     box-sizing: border-box;
@@ -804,20 +803,14 @@ footer {
 
 @media (max-width: 1020px) {
 
-    header {
-        position: static;
-        margin-top: 0px;
+    .container {
+        width: 100%;
     }
 
-    
-    a[name] {
-        top: 0px;
-    }
     /*SLIDER*/
 
     .slider {
         height: 452px;
-        margin-top: 0px;
     }
 
     .swiper {
