@@ -809,6 +809,10 @@ footer {
         margin-top: 0px;
     }
 
+    
+    a[name] {
+        top: 0px;
+    }
     /*SLIDER*/
 
     .slider {
