@@ -491,7 +491,7 @@ nav a {
 }
 
 .persons-info-image {
-    width: 300px;
+    width: 100%;
 }
 
 .persons-info-text {
@@ -806,10 +806,16 @@ footer {
 
 @media (max-width: 1020px) {
 
+    header {
+        position: static;
+        margin-top: 0px;
+    }
+
     /*SLIDER*/
 
     .slider {
         height: 452px;
+        margin-top: 0px;
     }
 
     .swiper {
@@ -909,7 +915,27 @@ footer {
         height: 184px; 
     }
 
+    /*ABOUT US*/
+
+    .about_us {
+        height: 0%;
+        padding-bottom: 74px;
+        border: none;
+    }
+
+    .persons {
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.2%;
+        height: 60%;
+        padding-top: 40px;
+    }
+
+    .title-about_us {
+        padding-top: 53px;
+    }
+
 }
+
 
 @media (max-width: 768px) {
     header {
