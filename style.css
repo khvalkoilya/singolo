@@ -615,15 +615,13 @@ input:nth-child(4) {
     height: 38px;
     background: #FBC65F;
     padding-right: 10px;
-    /* margin-left: 499px; */
     font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
-
-color: #886A30;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #886A30;
     
 }
 
@@ -934,6 +932,32 @@ footer {
         padding-top: 53px;
     }
 
+    .quote-menu {
+        height: 631px;
+    }
+
+    .quote-menu__title {
+        padding-top: 68px;
+    }
+
+    .get_a_quote {
+        padding-top: 24px;
+        grid-template-columns: 63.8% 31.9%;
+        gap: 4.3%
+    }
+
+    input {
+        margin-bottom: 11px;
+        width: 97%;
+    }
+
+    .contact-information__text {
+        padding-top: 3px;
+    }
+
+    .contact-information__links {
+        padding-top: 11px;
+    }
 }
 
 
