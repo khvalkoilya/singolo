@@ -204,6 +204,22 @@ const messageForm = (event) => {
     }
 };
 
+const rotateBurger = () => {
+    let burger=document.querySelector('.burger-icon').classList;
+    if(burger.length==2) {
+        burger.remove('transform__burger-icon');
+        document.querySelector('.bg-for-burger').classList.remove('fixed-back');
+        document.querySelector('.header-name').classList.remove('header-name__burger');
+        document.querySelector('.header__nav').classList.remove('header__nav__transform');
+    }
+    else  {
+        burger.add('transform__burger-icon');
+        document.querySelector('.bg-for-burger').classList.add('fixed-back');
+        document.querySelector('.header-name').classList.add('header-name__burger');
+        document.querySelector('.header__nav').classList.add('header__nav__transform');
+    }
+};
+
 window.addEventListener('scroll', scrollNav);
 document.querySelector('.header__nav').addEventListener('click', headerNav);
 document.querySelector('.vertical-home').addEventListener('click', verticalScreen);
@@ -211,3 +227,5 @@ document.querySelector('.horizontal-home').addEventListener('click', horizontalS
 document.querySelector('.portfolio-nav').addEventListener('click', portfolioNav);
 document.querySelector('.portfolio-images').addEventListener('click', portfolioBorder);
 document.querySelector('button').addEventListener('click', messageForm);
+
+document.querySelector('.burger-icon').addEventListener('click', rotateBurger);

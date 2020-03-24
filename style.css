@@ -61,6 +61,10 @@ header {
     z-index: 2;
 }
 
+.burger-icon {
+    display: none;
+}
+
 a[name] {
     position: relative;
     top: -95px;
@@ -80,14 +84,14 @@ a[name] {
     color:#e26861;
 }
 
-nav {
+.header__nav {
     float: right;
     display: flex;
     justify-content: space-between;
     width: 370px;
 }
 
-nav a {
+.header__nav a {
     font-size: 13px;
     letter-spacing: -1px;
     line-height: 6px;
@@ -689,7 +693,7 @@ input:nth-child(4) {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: black;
+    background: #2D303A;
     opacity: 0.6;
 }
 
@@ -959,9 +963,81 @@ footer {
 
 
 @media (max-width: 768px) {
+
     header {
-        background-color: gray;
+        height: 71px;
+        margin-top: -71px;
+        border: none;
     }
+
+    .burger-icon {
+        position: absolute;
+        display: block;
+        height: 20px;
+        width: 25px;
+        left: 20px;
+        top: 26px;
+        z-index: 1;
+        cursor: pointer;   
+    }
+
+    .transform__burger-icon {
+        transform: rotate(90deg);
+    }
+
+    .header-name {
+        text-align: center;
+        padding-top: 32px;
+        font-size: 20px;
+    }
+
+    .header-name__burger {
+        position: absolute;
+        left: 71px;
+        z-index: 1;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        justify-content: left;
+        position: absolute;
+        background: #2D303A;
+        padding-top: 232px;
+        padding-left: 71px;
+        top: 0px;
+        left: 0;
+        height: 100vh;
+        width: 207px;
+        transform: translateX(-100%);
+        transition: 300ms linear;
+    }
+
+    .header__nav__transform {
+        -webkit-transform: none;
+        transform: none;
+        transition: 300ms linear;
+        box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .header__nav a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.035em;
+        padding-bottom: 32px;
+
+    }
+
+    .header__nav a:not(:first-child):before {
+        content: "";
+        padding-right: 0;
+    }
+
+    .slider {
+        margin-top: 71px;
+    }
+
+
 }
 
 @media (max-width: 375px) {
