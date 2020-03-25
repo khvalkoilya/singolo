@@ -820,6 +820,14 @@ footer {
     .swiper {
        top: 206px;
     }
+    
+    .swiper.left {
+        left: 28px;
+    }
+
+    .swiper.right  {
+        right: 45px;
+    }
 
     .two-iphones {
         width: 600px;
@@ -963,6 +971,9 @@ footer {
 
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
 
     header {
         height: 71px;
@@ -1033,8 +1044,71 @@ footer {
         padding-right: 0;
     }
 
+    /*SLIDER*/
+
     .slider {
+        height: 221px;
         margin-top: 71px;
+    }
+
+    .arrow {
+        width: 14px;
+        height: 25px;
+    }
+
+    .swiper {
+        top: 98px;
+    }
+
+    .swiper.left {
+        left: 10px;
+    }
+
+    .swiper.right {
+        right: 25px;
+    }
+
+    .two-iphones {
+        width: 293px;
+        height: 100px;
+    }
+
+    .vertical {
+        width: 88px;
+        padding-top: 20px;
+    }
+
+    .vertical-blackRect {
+        width: 69.12px;
+        height: 122.43px;
+        left: 4.8px;
+        top: 43.94px;
+    }
+
+    .vertical-home {
+        width: 15px;
+        height: 15px;
+        top: 169.5px;
+        left: 31.5px;
+    }
+
+    .horizontal {
+        width: 178px;
+        padding: 65px 0 0 26px;
+    }
+
+    .horizontal-blackRect {
+        height: 69.12px;
+        width: 122.43px;
+        left: 48.8px;
+        top: 70.6px;
+    }
+
+    .horizontal-home {
+        width: 15px;
+        height: 15px;
+        top: 97.5px;
+        left: 29px;
     }
 
 
