@@ -1124,6 +1124,22 @@ footer {
         top: 13px;
     }
 
+    /*SERICES*/
+    
+    .services {
+        height: 1033px;
+    }
+
+    .services-header {
+        padding-top: 37px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        padding-top: 28px;
+        grid-auto-rows: auto;
+        grid-row-gap: 0;
+    }
 }
 
 @media (max-width: 375px) {
