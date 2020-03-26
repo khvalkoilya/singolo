@@ -91,7 +91,7 @@ a[name] {
     width: 370px;
 }
 
-.header__nav a {
+header a {
     font-size: 13px;
     letter-spacing: -1px;
     line-height: 6px;
@@ -458,9 +458,11 @@ a[name] {
     overflow: hidden;
 }
 
+.portfolio-images__image:nth-child(n+13) {
+    display: none;
+}
+
 .portfolio-images__image {
-    width: 220px;
-    height: 187px;
     overflow: hidden; 
 }
 
@@ -907,18 +909,21 @@ footer {
     /*PORFOLIO*/
 
     .portfolio {
-        height: 1102px;
+        height: 0%;
+        padding-bottom: 73px;
     }
 
     .portfolio-images {
-        height: 822px;
-        grid-template-columns: repeat(3,216px);
-        grid-auto-rows: 184px;
+        height: 0%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 20px;
+        padding-top: 28px;
     }
 
-    .portfolio-images__image {
-        width: 216px;
-        height: 184px; 
+    .portfolio-images__image img {
+        width: 100%;
+        height: 100%;
     }
 
     /*ABOUT US*/
@@ -974,6 +979,9 @@ footer {
         padding: 0 30px;
     }
 
+    a[name] {
+        top: -65px;
+    }
     header {
         height: 71px;
         margin-top: -71px;
@@ -1127,7 +1135,7 @@ footer {
     /*SERICES*/
     
     .services {
-        height: 1033px;
+        height: 0%
     }
 
     .services-header {
@@ -1140,6 +1148,75 @@ footer {
         grid-auto-rows: auto;
         grid-row-gap: 0;
     }
+
+    /*PORTFOLIO*/
+
+    .title-portfolio {
+        padding-top: 55px;
+    }
+
+    .portfolio {
+        padding-bottom: 42px;
+        border: 0;
+    }
+
+    .portfolio-images {
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 24px;
+    }
+
+    .portfolio-images__image:nth-child(n+9) {
+        display: none;
+    }
+
+    /*ABOUT US*/
+
+    .persons {
+        grid-template-columns: 1fr;
+        padding-top: 28px;
+        gap: 1.5%;
+        padding-bottom: 45px;
+    }
+
+    .title-about_us {
+        padding-top: 33px;
+    }
+
+    /*QUOTE*/
+
+    .quote-menu {
+        height: 0%;
+        padding-bottom: 60px;  
+        border: none;
+    }
+
+    .quote-menu__title {
+        padding-top: 54px;
+    }
+
+    .get_a_quote {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 95.5%;
+    }
+
+    .submit-button{
+        width: 100%;
+    }
+
+    /*FOOTER*/
+
+    .copyright {
+        display: none;
+    }
+
+    .footer__contacts {
+        margin: 0 auto;
+    } 
+
+    
 }
 
 @media (max-width: 375px) {
