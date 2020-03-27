@@ -167,11 +167,8 @@ const portfolioNav = (event) => {
     document.querySelectorAll('.portfolio-nav > p').forEach(p=> { p.classList.remove('p-white') });
     if(event.target.parentElement===document.querySelector('.portfolio-nav')) {
         event.target.classList.add('p-white');
-        let array=[];
-        for(let i=0;i<12;i++) {
-            array.push(i);
-        }
-        array=shuffle(array);
+        let images=Array.from(document.querySelector('.portfolio-images').children);
+        images=shuffle(images);
         function shuffle(arr){
             let j, temp;
             for(var i = arr.length - 1; i > 0; i--){
@@ -182,11 +179,13 @@ const portfolioNav = (event) => {
             }
             return arr;
         }
-        console.log(array);
-        let images=Array.from(document.querySelector('.portfolio-images').children);
+        document.querySelector('.portfolio-images').innerHTML="";
+        let outer="";
         for(let item=0; item<images.length; item++) {
-            images[item].style.order=array[item];
+            outer+=images[item].outerHTML;
         }
+        document.querySelector('.portfolio-images').innerHTML=outer; 
+
     }
 };
 
