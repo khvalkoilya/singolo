@@ -1222,7 +1222,7 @@ footer {
 }
 
 @media (max-width: 375px) {
-    header {
-        background-color: yellow;
+    .container {
+        padding: 0 10px;
     }
 }
