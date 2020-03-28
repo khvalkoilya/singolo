@@ -1169,6 +1169,7 @@ footer {
     .portfolio-images {
         grid-template-columns: repeat(2,1fr);
         padding-top: 24px;
+        gap: 10px;
     }
 
     .portfolio-images__image:nth-child(n+9) {
