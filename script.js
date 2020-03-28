@@ -7,11 +7,11 @@ const scrollNav = (event) => {
             document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
             document.querySelectorAll('.header__nav > a')[0].classList.add('a-red');
         }
-        if(y>=600&&y<1100) {
+        if(y>=600&&y<1090) {
             document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
             document.querySelectorAll('.header__nav > a')[1].classList.add('a-red');
         }
-        if(y>1102&&y<1966) {
+        if(y>1090&&y<1966) {
             document.querySelectorAll('.header__nav > a').forEach(a=> { a.classList.remove('a-red') });
             document.querySelectorAll('.header__nav > a')[2].classList.add('a-red');
         }
