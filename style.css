@@ -819,6 +819,10 @@ footer {
 
 @media (max-width: 1020px) {
 
+    .slider .container {
+        padding: 0;
+    }
+
     .container {
         width: 100%;
     }
@@ -1226,8 +1230,3 @@ footer {
     
 }
 
-@media (max-width: 375px) {
-    .container {
-        padding: 0 10px;
-    }
-}
