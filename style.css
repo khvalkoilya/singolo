@@ -606,6 +606,7 @@ header a {
 }
 
 input, .submit-button {
+    transition: none;
     padding-left: 15px;
     height: 36px;
     border-radius: 5px;
@@ -1031,7 +1032,7 @@ footer {
         left: 0;
         height: 100vh;
         width: 207px;
-        transform: translateX(-100%);
+        transform: translateX(-101%);
         transition: 300ms linear;
     }
 
@@ -1204,7 +1205,7 @@ footer {
     }
 
     input {
-        width: 95.5%;
+        width: calc(100% - 15px);
     }
 
     .submit-button{
